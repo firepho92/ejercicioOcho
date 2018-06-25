@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Translate server client</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  </head>
+  <body>
+  	<div class="row">
+  		<div class="col-sm-4">
+  			<form method="get" id="form">
+		  		<div class="form-group">
+				    <label for="word">Enter a word</label>
+				    <input type="text" class="form-control" id="word" placeholder="Enter a word">
+				  </div>
+          <div class="form-group">
+            <select class="form-control" id="lang">
+    					<option value="eng">English</option>
+    					<option value="fr">French</option>
+    				</select>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-light">Submit</button>
+          </div>
+			</form>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-sm-4" id="res"></div>
+  	</div>
+  </body>
+  <script src="script.js"></script>
+</html>
