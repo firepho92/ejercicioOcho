@@ -6,8 +6,7 @@ function handleSubmit(e){
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function(){
 		if(this.readyState === 4 && this.status === 200){
-			var obj = xhr.responseText;
-			console.log(obj);
+			document.getElementById('res').innerHTML = xhr.response;
 		}
 	};
 
